@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MiniSuper - Catálogo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>MiniSuper</h1>
+    <p class="subtitle">Catálogo de productos</p>
+  </header>
+
+  <main id="app">
+    
+    <section id="catalog" class="view">
+      <div class="controls">
+        <input id="search" placeholder="Buscar productos..." />
+      </div>
+      <div id="product-grid" class="grid"></div>
+    </section>
+
+    <section id="detail" class="view hidden">
+      <button id="back" class="btn back">← Regresar</button>
+      <div class="detail-card">
+        <img id="detail-img" alt="producto"/>
+        <div class="detail-info">
+          <h2 id="detail-title"></h2>
+          <p id="detail-brand" class="muted"></p>
+          <p id="detail-price" class="price"></p>
+          <p id="detail-description"></p>
+          <p id="detail-extra" class="muted"></p>
+          <p id="detail-opinions"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a href="https://dummyjson.com/products" target="_blank">dummyjson.com</a></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
